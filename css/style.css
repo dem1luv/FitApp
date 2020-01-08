@@ -557,8 +557,12 @@ body {
     box-shadow: 0 0 60px rgba(48, 60, 17, 0.15);
     border: 1px solid rgba(145, 145, 145, 0.3);
     border-radius: 8px; }
-  .manage__img img {
-    max-width: 100%; }
+  .manage__img {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto; }
+    .manage__img img {
+      max-width: 100%; }
   .manage__info {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;

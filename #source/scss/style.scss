@@ -388,6 +388,7 @@ body {
 		border-radius: 8px;
 	}
 	&__img {
+		flex: 0 1 auto;
 		img {
 			max-width: 100%;
 		}
