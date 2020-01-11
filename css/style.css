@@ -565,7 +565,7 @@ body {
     -ms-flex: 0 1 auto;
     flex: 0 1 auto; }
     .manage__img img {
-      max-width: 100%; }
+      width: 100%; }
   .manage__info {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -650,6 +650,31 @@ body {
     font-size: 31px; }
   .manage__block-2 .manage__time-format {
     font-size: 20px; }
+  @media (max-width: 374px) {
+    .manage__block-2 .manage__product {
+      font-size: 16px;
+      margin: 0 0 8px 0; }
+    .manage__block-2 .manage__info-text {
+      font-size: 12px;
+      margin: 0 0 6px 0; }
+    .manage__block-2 .manage__more-info {
+      font-size: 12px; }
+    .manage__block-2 .manage__gram {
+      margin: 0 10px 0 0; }
+    .manage__block-2 .manage__circle {
+      margin: 0 10px 0 0; }
+    .manage__block-2 .manage__time {
+      color: #b4b4b4;
+      margin: 0 19px 0 0; }
+    .manage__block-2 .manage__time-time {
+      font-size: 25px; }
+    .manage__block-2 .manage__time-format {
+      font-size: 16px; }
+    .manage__block-2 .manage__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+      flex: 0 1 100px;
+      margin: 0; } }
   .manage__block-1 {
     width: 421px;
     height: 109px;
@@ -678,6 +703,9 @@ body {
     @media (max-width: 524px) {
       .manage__block-3 {
         width: 100%; } }
+    @media (max-width: 324px) {
+      .manage__block-3 .manage__product {
+        font-size: 15px; } }
 
 .download {
   background-color: #2ecc71;
