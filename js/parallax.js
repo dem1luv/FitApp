@@ -1,6 +1,6 @@
 "use strict";
 
-$('.home').on('mousemove', (e) => {
+$('.home, .header').on('mousemove', (e) => {
 	if ($(window).width() < 800){
 		return;
 	}
@@ -87,21 +87,4 @@ $('.download').on('mousemove', (e) => {
 		'transform',
 		`translate(${x * 45}px, ${y * 0}px)`
 	);
-});
-
-
-$(window).scroll(function(){
-	let st = $(this).scrollTop();
-	$(".item").css(
-		"transform",
-		`translate(0, ${st/5}%)`
-		);
-	/*
-	$(".item").each(function(i, elem){
-		let x = $(elem).css("transform").slice(7, -1).split(',')[4];
-		$(elem).css(
-			"transform", `translate(${x}px, ${st/10}%)`
-		);
-	});
-	*/
 });
