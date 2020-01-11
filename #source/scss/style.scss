@@ -46,17 +46,6 @@ body {
 	padding: 0 $dPad;
 	display: flex;
 	align-items: center;
-	/*
-	@media (max-width: $dSize) {
-		max-width: 970px;
-	}
-	@media (max-width: 992px) {
-		max-width: 750px;
-	}
-	@media (max-width: 767px) {
-		max-width: none;
-	}
-	*/
 }
 .title {
 	font-weight: 300;
@@ -364,7 +353,6 @@ body {
 			text-align: center;
 		}
 	}
-	&__title {}
 	&__text {
 		max-width: 462px;
 		margin: 24px 0 0 0;
@@ -643,7 +631,3 @@ body {
 	}
 }
 /*------*/
-
-/* Подвал */
-@import "footer.scss";
-/*--------*/
