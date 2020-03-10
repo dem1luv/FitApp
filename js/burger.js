@@ -1,24 +1,19 @@
-"use strict"
-
+// burger
 $(window).on("load resize", function(){
 	if ($(window).width() < 768){
-		$('.header__nav>.link-get-app').appendTo($('.header-menu')).css("display", "inline");
-  	$('.header__links>a').appendTo($('.header-menu')).css("display", "inline");
+		if (document.querySelector(".menu__button.active"))
+			$('.menu__box,.menu__button').addClass('active');
+			$('body').add('lock');
 	} else {
-		$('.header-menu>.link-get-app').appendTo($('.header__nav'));
-		$('.header-menu>a').appendTo($('.header__links'));
+		if (document.querySelector(".menu__button.active"))
+			$('.menu__box,.menu__button').removeClass('active');
+			$('body').removeClass('lock');
   }
 
-  if ($(window).width() < 460) {
-  	$('.header__nav>.link-get-app').appendTo($('.header-menu')).css("display", "inline");
-  } else {
-  	$('.header-menu>.link-get-app').appendTo($('.header__nav'));
-  }
 });
-
 $(document).ready(function(){
 	$('.header__burger').click(function(event) {
-		$('.header__burger,.header-menu').toggleClass('active');
+		$('.header__burger,.menu__box').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });

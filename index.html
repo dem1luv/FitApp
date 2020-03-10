@@ -10,31 +10,42 @@
 <body>
 	<div class="wrapper">
 		<header class="header">
-	<div class="container">
-		<a href="#" class="header__logo">FitApp</a>
-		<nav class="header__nav">
-			<div class="header__links">
-				<a href="#" class="header__link">About</a>
-				<a href="#" class="header__link">Features</a>
-				<a href="#" class="header__link">Reviews</a>
-				<a href="#" class="header__link">Blog</a>
-				<a href="#" class="header__link">Support</a>
+			<div class="container">
+				<div class="header__logo">
+					<a href="#home">FitApp</a>
+				</div>
+				<nav class="header__nav">
+					<div class="header__links">
+						<a href="#home" class="header__link">About</a><!--
+					 --><a href="#features" class="header__link">Features</a><!--
+					 --><a href="#" class="header__link">Reviews</a><!--
+					 --><a href="#" class="header__link">Blog</a><!--
+					 --><a href="#" class="header__link">Support</a>
+					</div>
+					<a href="#download" class="header__link link-get-app">Get App</a>
+				</nav>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="hamburger-menu">
+					<ul class="menu__box">
+						<li><a class="menu__item menu__item-download" href="#download">Get App</a></li>
+						<li><a class="menu__item" href="#home">About</a></li>
+						<li><a class="menu__item" href="#features">Features</a></li>
+						<li><a class="menu__item" href="#">Reviews</a></li>
+						<li><a class="menu__item" href="#">Blog</a></li>
+						<li><a class="menu__item" href="#">Support</a></li>
+					</ul>
+				</div>
 			</div>
-			<a href="#" class="header__link link-get-app">Get App</a>
-		</nav>
-		<div class="header__burger">
-			<span></span>
-		</div>
-	</div>
-</header>
-		<div class="header-menu"></div> 
- 		<div class="home">
- 			<div class="home__bg-images bg-images">
- 				<img class="im1" src="img/home/01.png" alt="">
- 				<img class="im2" src="img/home/02.png" alt="">
- 				<img class="im3" src="img/home/03.png" alt="">
- 				<img class="im4" src="img/home/04.png" alt="">
- 				<img class="im5" src="img/home/05.png" alt="">
+		</header>
+ 		<div class="home" id="home">
+ 			<div data-hover-only="true" class="home__parallax parallax">
+ 				<img data-depth="0.6" src="img/home/01.png" alt="" class="parallax__item parallax__item-1">
+ 				<img data-depth="0.2" src="img/home/02.png" alt="" class="parallax__item parallax__item-2">
+ 				<img data-depth="0.8" src="img/home/03.png" alt="" class="parallax__item parallax__item-3">
+ 				<img data-depth="0.1" src="img/home/04.png" alt="" class="parallax__item parallax__item-4">
+ 				<img data-depth="0.5" src="img/home/05.png" alt="" class="parallax__item parallax__item-5">
  			</div>
  			<div class="container">
  				<div class="home__left wow fadeInLeft">
@@ -42,8 +53,8 @@
  					<div class="home__title title w">Helps you eat <span>better.</span></div>
  					<p class="home__text text w">FitApp is a free calorie counting and diet app PSD template which includes high quality 9 screens. This template can be very helpful if you're planning to build food tracking application.</p>
  					<div class="home__links home-links">
- 						<a href="#" class="home-links__item"><img src="img/home/link1.png" alt=""></a>
- 						<a href="#" class="home-links__item"><img src="img/home/link2.png" alt=""></a>
+ 						<a href="#" class="home-links__item"><img src="img/home/link1.png" alt=""></a><!--
+					 --><a href="#" class="home-links__item"><img src="img/home/link2.png" alt=""></a>
  					</div>
  				</div>
  				<div class="home__right wow fadeInRight">
@@ -53,7 +64,7 @@
  				</div>
  			</div>
  		</div>
- 		<div class="features">
+ 		<div class="features" id="features">
  			<div class="container">
  				<div class="features__left wow zoomIn">
  					<img src="img/features/phone.png" alt="">
@@ -65,11 +76,11 @@
  			</div>
  		</div>
  		<div class="simple">
- 			<div class="simple__bg-images bg-images">
- 				<img src="img/simple/01.png" alt="" class="im1">
- 				<img src="img/simple/02.png" alt="" class="im2">
- 				<img src="img/simple/03.png" alt="" class="im3">
- 				<img src="img/simple/04.png" alt="" class="im4">
+ 			<div data-hover-only="true" class="simple__parallax parallax">
+ 				<img data-depth="-0.2" src="img/simple/01.png" alt="" class="parallax__item parallax__item-1">
+ 				<img data-depth="-0.5" src="img/simple/02.png" alt="" class="parallax__item parallax__item-2">
+ 				<img data-depth="-0.75" src="img/simple/03.png" alt="" class="parallax__item parallax__item-3">
+ 				<img data-depth="-0.6" src="img/simple/04.png" alt="" class="parallax__item parallax__item-4">
  			</div>
  			<div class="container">
  				<div class="simple__top">
@@ -139,13 +150,13 @@
  				</div>
  			</div>
  		</div>
- 		<div class="download">
- 			<div class="download__bg-images bg-images">
- 				<img src="img/download/01.png" alt="" class="im1">
- 				<img src="img/download/02.png" alt="" class="im2">
- 				<img src="img/download/03.png" alt="" class="im3">
- 				<img src="img/download/04.png" alt="" class="im4">
- 				<img src="img/download/05.png" alt="" class="im5">
+ 		<div class="download" id="download">
+ 			<div data-hover-only="true" class="download__parallax parallax">
+ 				<img data-depth="0.5" src="img/download/01.png" alt="" class="parallax__item parallax__item-1">
+ 				<img data-depth="-0.2" src="img/download/02.png" alt="" class="parallax__item parallax__item-2">
+ 				<img data-depth="-0.75" src="img/download/03.png" alt="" class="parallax__item parallax__item-3">
+ 				<img data-depth="0.2" src="img/download/04.png" alt="" class="parallax__item parallax__item-4">
+ 				<img data-depth="-0.5" src="img/download/05.png" alt="" class="parallax__item parallax__item-5">
  			</div>
  			<div class="container wow flipInX">
  				<div class="download__title title w">Download, customize & <span>enjoy!</span></div>
@@ -153,11 +164,11 @@
  				<a href="#" class="download__link link-get-app">Get App</a>
  			</div>
  		</div>
-		<script src="js/jquery.js"></script>
-		<script src="js/burger.js"></script>
-		<script src="js/parallax.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/animation.js"></script>
 	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/burger.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
