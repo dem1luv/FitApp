@@ -1,2 +1,2 @@
 # FitApp-html-css-js
-https://lyashket.github.io/FitApp
+https://dem1luv.github.io/FitApp
